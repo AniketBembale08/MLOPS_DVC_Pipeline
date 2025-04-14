@@ -24,6 +24,19 @@ Expermients with DVC:
 17> Change params, re-run code (produce new experiments)
 18> Now git add, commit, push
 
+Adding a remote s3 storage to DVC:
+19>Login to aws console
+20>Create an IAM user
+ create an acess key and pass
+ create a s3 bucket 
+21>pip install dvc[s3]
+22> pip install awscli
+23> aws configure
+ enter acess key ,pass, region
+24>dvc remote add -d dvcstore s3://bucketname
+25>dvc commit-push the exp outcome that you want to keep
+26>Finally git add ,commit,push
+
 
 
 
